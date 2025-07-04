@@ -1,0 +1,46 @@
+<%- include("partials/header")-%>
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f0bb2fa622.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="stylesheet" href="tictactoe.css">
+</head>
+<body>
+   <h1 style="margin-top: 10px; padding-bottom: 30px; padding-top: 30px; background-color: #c9866d;">GAME-TIME</h1>
+
+   
+
+
+<h1 class="gameTitle">Tic Tac Toe Multi-Player</h1>
+<div class="container">
+
+	<table>
+        <tr>
+            <td class="square col-lg-4" id="s1"></td>
+            <td class="square vertical col-lg-4" id="s2"></td>
+            <td class="square col-lg-4" id="s3"></td>
+        </tr>
+    
+        <tr>
+            <td class="square horizontal col-lg-4" id="s4"></td>
+            <td class="square vertical horizontal col-lg-4" id="s5"></td>
+            <td class="square horizontal col-lg-4" id="s6"></td>
+        </tr>
+    
+        <tr>
+            <td class="square col-lg-4" id="s7"></td>
+            <td class="square vertical col-lg-4" id="s8"></td>
+            <td class="square col-lg-4" id="s9"></td>
+        </tr>
+    </table>
+
+	<p class="turn"></p>
+	<h1 class="result"></h1>
+	<div class="btn">
+		<button class="btn btn-info">Reset</button>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="tictactoe.js"></script>
+<%- include("partials/footer") -%>

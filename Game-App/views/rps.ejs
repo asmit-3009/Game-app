@@ -1,0 +1,59 @@
+<%- include("partials/header")-%>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/f0bb2fa622.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+<link rel="stylesheet" href="rps.css">
+</head>
+<body>
+   <h1 style="margin-top: 10px; padding-bottom: 10px; padding-top: 10px; background-color: #c9866d;">GAME-TIME</h1>
+
+
+
+<h1 class="gameTitle" style="margin-top: 10px;">Rock Paper Scissors</h1>
+<div class="container">
+    <header class="gameHeader"> 
+        <p>3 Weapons ︱ 5 Lives ︱ 2 Destinies</p>
+        <p>
+          <span style="color:#8070ac; font-weight: 900;">Scissor</span> beats <span style="color: #b96b78; font-weight: 900;">Paper</span> ︱
+          <span style="color: #b96b78; font-weight: 900;">Paper</span> beats <span style="color: #62b49c; font-weight: 900;">Rock</span> ︱
+          <span style="color: #62b49c; font-weight: 900;">Rock</span> beats <span  style="color:#8070ac; font-weight: 900;">Scissor</span>
+        </p>
+      </header>
+	<main class="main">
+        <div class="scoreboard">
+          <h2 class="score-info" id="scoreInfo">Score</h2>
+          <div class="scores-container">
+            <div class="score">
+              <p id="playerScore">Player: 0</p>
+              <i class="fas fa-hand-rock" id="playerSign"></i>
+            </div>
+            <div class="score">
+              <p id="computerScore">Computer: 0</p>
+              <i class="fas fa-hand-rock" id="computerSign"></i>
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="btn" id="rockBtn" style="background-color: aqua;">
+            <i class="far fa-hand-rock"></i>
+          </button>
+          <button class="btn" id="paperBtn" style="background-color: rgb(236, 76, 27);">
+            <i class="far fa-hand-paper"></i>
+          </button>
+          <button class="btn" id="scissorsBtn" style="background-color: blueviolet;">
+            <i class="far fa-hand-scissors"></i>
+          </button>
+        </div>
+      </main> 
+      <div class="modal" id="endgameModal" style="background-color:rgb(199, 111, 207);">
+        <p class="message bold" id="endgameMsg"></p>
+        <p class="message">Would you like to try again?</p>
+        <button class="btn btn-restart" id="restartBtn" style="background-color: rgb(238, 181, 200);">Restart</button>
+      </div>
+      <div class="overlay" id="overlay"></div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script type="text/javascript" src="rps.js"></script>
+<%- include("partials/footer") -%>
